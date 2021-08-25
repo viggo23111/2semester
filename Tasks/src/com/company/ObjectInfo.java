@@ -35,13 +35,18 @@ public class ObjectInfo {
         }
         return stringSet;
     }
-    public static void showMethodsInherited(Object o){
+    public static Set<String> showMethodsInherited(Object o){
         Set<String> allMethods = showAllMethods(o);
         Set<String> classMethods = showMethods(o);
         allMethods.removeAll(classMethods);
         System.out.println("Show methods that is inherited!");
-        for (String s : allMethods) {
-            System.out.println(s);
+        return allMethods;
+    }
+
+    public static void printOutInheritedMethods(Object o){
+        Set<String> inheritedMethods = showMethodsInherited(o);
+        for (String inheritedMethod : inheritedMethods) {
+            System.out.println(inheritedMethod);
         }
     }
 

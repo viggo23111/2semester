@@ -17,7 +17,7 @@ public class Main {
         MisseKat misseKat = new MisseKat();
         ObjectInfo objectInfo = new ObjectInfo();
 
-        objectInfo.showMethodsInherited(objectInfo);
+        objectInfo.printOutInheritedMethods(objectInfo);
 /*
         Command[] commands = new Command[5];
         commands[0] = new MuhKo("Cow1", 10);
