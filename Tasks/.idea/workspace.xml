@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70078ea1-5305-418d-88b9-bd1ac01a14e0" name="Default Changelist" comment="" />
+    <list default="true" id="70078ea1-5305-418d-88b9-bd1ac01a14e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tasks/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tasks/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tasks/com/company/ObjectInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tasks/com/company/ObjectInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Dansk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dansk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/English.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/English.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ObjectInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ObjectInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dialogDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dialogDemo/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +95,11 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dialogDemo" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">

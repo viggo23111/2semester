@@ -2,56 +2,76 @@ package com.company;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
-        String s = "Hej";
-        Person person = new Person();
-        //MuhKo muhKo = new MuhKo();
-        VovHund vovHund = new VovHund();
-        MisseKat misseKat = new MisseKat();
         ObjectInfo objectInfo = new ObjectInfo();
-
-        objectInfo.printOutInheritedMethods(objectInfo);
-/*
-        Command[] commands = new Command[5];
-        commands[0] = new MuhKo("Cow1", 10);
-        commands[1] = new VovHund();
-        commands[2] = new MisseKat();
-        commands[3] = new MuhKo("Cow2", 20);
-        commands[4] = new VovHund();
-
-
-        for (Command command : commands) {
-            command.execute();
-        }
-        ArrayList<Command> commandArraylist = new ArrayList<>(Arrays.asList(commands));
-        System.out.println("Arraylist ");
-        for (Command command : commandArraylist) {
-            command.execute();
-        }
-
-        objectInfo.showMethods(new MuhKo("Cow3", 30));
-        objectInfo.showVariables(new MuhKo("COWTEST", 18));
-        objectInfo.showSuperClass(vovHund);
-        System.out.println("Du skrev: " + getInput("Skriv noget"));
-        String svar = getInput("Hvilken type objekt vil du have?");
+        Dialog dialog = new Dansk();
         Object o;
+        System.out.println(dialog.welcome());
+        Set<String> stringSet = new HashSet<>();
+        stringSet = new LinkedHashSet<>();
+        stringSet = new TreeSet<>();
 
-        switch (svar) {
+        Map<String, Object> objectMap = new HashMap<>();
+        objectMap.put("MuhKo", new MuhKo("test",10));
+        objectMap.put("VovHund", new VovHund());
+        objectMap.put("MisseKat", new MisseKat());
+        objectMap.put("ObjInfo", new ObjectInfo());
+        objectMap.put("Map", new HashMap<>());
+        objectMap.put("TreeSet", new TreeSet<>());
+        objectMap.put("div0", new ArithmeticException());
+
+
+
+        objectInfo.printOutInheritedMethods(objectMap.getOrDefault(getInput("Skriv en type :"),new Object()).getClass().getSimpleName());
+
+        Set<String> strings = objectMap.keySet();
+        System.out.println("Her kan du se alle klasserne du kan vælge imellem ");
+
+        for (String string : strings) {
+            System.out.println(string);
+        }
+
+        while (true) {
+            dialog = changeLanguage(dialog,getInput("Select language da/eng to start the program:"));
+            System.out.println(dialog.welcome());
+            break;
+        }
+
+        String svar = getInput(dialog.selectObject());
+        if (svar.equals(dialog.dog())){
+            o = new VovHund();
+            objectInfo.showSuperClass(o);
+        }
+        else if (svar.equals(dialog.cow())){
+            String name = getInput(dialog.getCowName());
+            int age = Integer.parseInt(getInput(dialog.getCowAge()));
+            o = new MuhKo(name, age);
+            System.out.println(dialog.cowsNameis() + name + dialog.cowsAgeIs() + age);
+            System.out.println("Superclass:");
+            objectInfo.showSuperClass(o);
+        }
+        else if (svar.equals("String")){
+            o = "";
+            objectInfo.showSuperClass(o);
+        }
+
+       /* switch (svar) {
+            case "dog":
             case "hund":
                 o = new VovHund();
                 break;
 
+            case "cow":
             case "ko":
-                String name = getInput("Hvad hedder koen?");
-                int age = Integer.parseInt(getInput("Hvor gammel er koen?"));
+                String name = getInput(dialog.getCowName());
+                int age = Integer.parseInt(getInput(dialog.getCowAge()));
                 o = new MuhKo(name, age);
+                System.out.println("The cows name is: " + name + " and the age is: " + age);
+                System.out.println("Superclass:");
                 objectInfo.showSuperClass(o);
                 break;
 
@@ -59,18 +79,20 @@ public class Main {
                 o = "";
                 objectInfo.showSuperClass(o);
                 break;
-            default:
+            default: 
                 o = new Object();
-
-        }
-
- */
+        }*/
     }
 
-
-
-
-
+    public static Dialog changeLanguage(Dialog dialog, String language){
+        if(language.equals("da")){
+            return new Dansk();
+        }
+        if(language.equals("eng")){
+            return new English();
+        }
+        return dialog;
+    }
     public static String getInput(String s) {
         System.out.println(s);
         Scanner scanner = new Scanner(System.in);
