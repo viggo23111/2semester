@@ -14,6 +14,6 @@ public class English extends Dialog{
 
     @Override
     public String selectObject() {
-        return "Enter the type of object you want to analyse";
+        return "Enter the type of object you want to analyse test";
     }
 }
