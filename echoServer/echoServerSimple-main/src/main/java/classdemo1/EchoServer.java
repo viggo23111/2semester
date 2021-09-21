@@ -17,7 +17,7 @@ public class EchoServer {
     private void handleClient(Socket socket) throws IOException {
         PrintWriter pw = new PrintWriter(socket.getOutputStream(),true);
         Scanner scanner = new Scanner(socket.getInputStream());
-        pw.println("Du er er connected, send en streng for at få den uppercased, send 'stop' for at stoppe");
+        pw.println("You are connected, send a string to make it uppercase, send 'stop' to stop the connection");
         String message = scanner.nextLine();
         while(!message.equals("stop")){
             pw.println(message.toUpperCase());
