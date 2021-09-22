@@ -104,6 +104,7 @@ public class ClientHandler implements Runnable {
             String question = quiz.getQuestions(key);
             pw.println(question);
             String answer = sc.nextLine();
+
             String correctAnswer = quiz.getAnswers(key);
             if (answer.equals(correctAnswer)) {
                 pw.println("CORRECT!");
