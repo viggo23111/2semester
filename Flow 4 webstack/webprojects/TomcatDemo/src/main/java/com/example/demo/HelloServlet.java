@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import java.io.*;
+import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
@@ -14,11 +15,25 @@ public class HelloServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
-
+        String firstName =request.getParameter("fname");
+        String lastName = request.getParameter("lname");
         // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
+        out.println("<h2>" + "Du ramte min get" + "</h2>");
+        out.println("Firstname is: " + firstName + " and lastname: " +lastName);
+        out.println("</body></html>");
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String firstName =request.getParameter("fname");
+        String lastName = request.getParameter("lname");
+        // Hello
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<h2>" + "Du ramte min post" + "</h2>");
+        out.println("Firstname is: " + firstName + " and lastname: " +lastName);
         out.println("</body></html>");
     }
 
