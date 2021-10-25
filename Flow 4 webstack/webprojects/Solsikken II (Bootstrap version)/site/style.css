@@ -1,0 +1,20 @@
+.content{
+    width: 100%;
+    margin:auto;
+}
+.content .content-area-1 h1{
+    text-align: center;
+    color: #7faacd;
+}
+.content .content-area-2{
+    width:80%;
+    margin: auto;
+}
+#success{
+    border: 3px solid #90bfe9;
+}
+#success h1{
+    text-align: center;
+    color: #7faacd;
+}
+
