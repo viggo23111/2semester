@@ -1,0 +1,38 @@
+h1{
+    margin: 100px;
+    color: #00163b;
+    font-size: 88px;
+}
+body{
+    max-width:1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    max-width:1024px;
+    border: 1px black;
+    margin-bottom: 40px;
+    background-color: #00163b;
+    padding: 5px;
+}
+.formsection{
+   margin: 5px;
+}
+.formitem{
+    margin: 5px;
+}
+footer{
+    margin-top: 2000px;
+    border-top: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+}
+@import url(https://fonts.googleapis.com/css2?family=Calibri:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+article section p {
+    color: red;
+    font-family: Calibri;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+}

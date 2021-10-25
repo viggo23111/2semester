@@ -1,0 +1,178 @@
+@import url(//db.onlinewebfonts.com/c/4d8cc347ebb06fcad10b4ca2aa8ad235?family=ChaletComprime-CologneSixty);
+.container {
+    width: 1170px;
+}
+.navwrapper {
+    height: 126px;
+    background-color: #0c2069;
+    width: 100%;
+    display: block;
+}
+.nav {
+    float: left;
+    width: 1014px;
+}
+.nav a{
+    font-weight: 400;
+   
+    color:white !important;
+}
+.nav a:hover{
+    color:#0085a2 !important;
+}
+.nav .mainnavigation {
+    width: 100%;
+    text-transform: uppercase;
+    border-top: solid 1px #0085a2;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.nav .mainnavigation a.nav-link{
+font-family: ChaletComprime-CologneSixty !important;
+    font-size:27px;
+}
+.nav .topnavigation a.nav-link{
+    font-family: ChaletComprime-CologneSixty !important;
+    font-size: 18px;
+}
+.nav .topnavigation {
+    width: 100%;
+    display: block;
+    font-size: 11px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.navwrapper .logo {
+    float: left;
+    width: 126px;
+}
+.topbanner {
+    margin-top: 54px;
+}
+.topbanner h1 {
+    font-family: ChaletComprime-CologneSixty !important;
+    font-size: 36px;
+    color:#014687;
+ }
+.contentarea h2{
+    font-family: ChaletComprime-CologneSixty !important;
+    font-size: 36px;
+}
+footer .sub-footer {
+    background-color: #014687;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #fff;
+}
+footer .sub-footer .left-col{
+    float: left!important;
+}
+footer .sub-footer .right-col{
+    float: right!important;
+}
+footer i {
+    width: 100%;
+    height: 2px;
+    float: left;
+    padding-top: 8px;
+    padding-bottom: 18px;
+}
+footer i.default-line-color {
+    border-top: solid 1px #006c9e;
+}
+.top-footer{
+    background: #001a6b;
+    padding-top:10px;
+}
+footer .top-footer .top-footer-row-1 a {
+    text-decoration: none;
+}
+footer .top-footer .top-footer-row-1 a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+footer .top-footer .top-footer-row-1 h6 {
+    font-family: ChaletComprime-CologneSixty !important;
+    font-size: 27px;
+    margin-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #fff;
+    padding-top: 6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+footer .top-footer .top-footer-row-3 p {
+    float: left;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    margin-top: 14px;
+    font-size: 20px;
+    width: auto !important;
+    color: white;
+}
+footer .top-footer .top-footer-row-3 .btn-info {
+    border: 1px solid #fff;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    color: #fff;
+    float: right;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: 700;
+}
+footer .top-footer .top-footer-row-3  .btn-info:hover {
+    background: #ff7a01;
+    border: 1px solid #ff7a01;
+    color: #fff;
+}
+footer .top-footer .top-footer-row-3{
+    width:auto;
+}
+footer .top-footer .top-footer-row-3 .left-col{
+    width:80%;
+    float: left!important;
+}
+footer .top-footer .top-footer-row-3 .right-col{
+    width:20%;
+    float: right!important;
+}
+.content-footer {
+    padding-bottom: 100px;
+    padding-top: 38px;
+    background-color: #003d76;
+    color: #fff;
+}
+.content-footer p {
+   margin:0;
+}
+.content-footer h6 {
+    font-family: ChaletComprime-CologneSixty !important;
+    font-size: 27px;
+    font-weight:400 !important;
+    margin-bottom: 20px !important;
+}
+.content-footer h2 {
+    font-weight:400;
+    font-family: ChaletComprime-CologneSixty !important;
+    font-size: 24px;
+    font-weight: 200 !important;
+    margin-bottom: 20px !important;
+}
+
+.content-footer h2 a {
+    font-weight:400;
+    color:white;
+}
