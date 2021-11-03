@@ -44,6 +44,7 @@ public class ClientHandler implements Runnable {
             msg = sc.nextLine();
             String action="";
             String word="";
+
             if (msg.equals("QUIZ")) {
                 action=msg;
             }else{
